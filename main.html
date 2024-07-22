@@ -8,7 +8,7 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<div>
+	
 		<form method="post">
 			<div>
 				<lebel for="name">Name:</lebel>
@@ -20,8 +20,38 @@
 			</div>
 			<div>
 				<span>Gender:</span>
-				<input type="radio" id="male" 
+				<input type="radio" id="male" name="gender" value="male" required>
+				<lebel for="male">Male</lebel>
+				<input type="radio" id="female" name="gender" value="female" required>
+				<lebel for="female">Female</lebel>
+				<input type="radio" id="other" name="gender" value="other" required>
+				<lebel for="other">Other</lebel>
 			</div>
+			<div>
+				<lebel for="cars">Car Brands:</lebel>
+				<select id="cars" name="cars">
+					
+					<option value="bmw">BMW</option>
+					<option value="audi">Audi</option>
+					<option value="mercedez">Mercedez</option>
+				</select>
+			</div>
+			<div>
+				<lebel for="carage">Car Age:</lebel>
+				<input type="number" id="carage" name="carage" required>
+			</div>
+			<div>
+			<lebel for="dop">Date of Purchase:</lebel>
+				<input type="date" id="dop" name="dop" required>
+				
+			</div>
+			<div>
+				<lebel for="password">Password:</lebel>
+				<input type="password" id="password" name="password" required>
+			</div>
+			 <div>
+               <button type="submit">Submit</button>
+            </div>
 		</form>
 	</div>
     <script type="text/javascript" src="./script.js">
